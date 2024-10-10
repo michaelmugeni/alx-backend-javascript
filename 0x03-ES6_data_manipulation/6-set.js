@@ -1,9 +1,3 @@
-function setFromArray(arr) {
-    return new Set(arr);
+export default function setFromArray(array) {
+  return new Set(array);
 }
-
-// Example usage:
-const array = [12, 32, 15, 78, 98, 15];
-const uniqueSet = setFromArray(array);
-console.log(setFromArray([12, 32, 15, 78, 98, 15]));
-
