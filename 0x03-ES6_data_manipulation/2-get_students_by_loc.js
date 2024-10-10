@@ -1,14 +1,8 @@
-function getListStudents() {
-    return [
-        { id: 1, firstName:'Guillaume',location: 'San Francisco' },
-        { id: 5, firstName: 'Serena', location: 'San Francisco' },
-    ];
+export default function getStudentsByLocation(students, city) {
+  if (students instanceof Array) {
+    return students.filter((student) => student.location === city);
+  }
+  return [];
 }
 
-function getStudentsByLocation(students, location) {
-    return students.filter(student => student.location === location);
-}
-
-const students = getListStudents();
-console.log(getStudentsByLocation(students, 'San Francisco'));
 
